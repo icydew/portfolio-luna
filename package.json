@@ -1,0 +1,23 @@
+{
+  "name": "luna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass ./css/scss/main.scss ./css/main.css -w ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icydew/portfolio-luna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icydew/portfolio-luna/issues"
+  },
+  "homepage": "https://github.com/icydew/portfolio-luna#readme",
+  "dependencies": {
+    "node-sass": "^3.10.1"
+  }
+}
