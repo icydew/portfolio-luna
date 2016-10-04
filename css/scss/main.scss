@@ -1,18 +1,21 @@
-.wrapper {
-  margin: 0;
-  padding: 0;
+body {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  min-height: 100%;
   font-family: Roboto, "Open Sans", serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #40485a;
 }
 
-@import "header";
-@import "content";
-@import "footer";
+@import "_header";
+@import "_content";
+@import "_footer";
+
+@media (max-width: 1200px) {
+}
+
+
+@media (max-width: 480px) {
+}
+
+

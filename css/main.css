@@ -1,20 +1,13 @@
-.wrapper {
-  margin: 0;
-  padding: 0;
+body {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  min-height: 100%;
   font-family: Roboto, "Open Sans", serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #40485a; }
 
 .header {
   background: url("../images/digital.jpg") no-repeat center;
-  height: 850px;
   flex-shrink: 0; }
   .header .container {
     display: flex;
@@ -64,10 +57,52 @@
       .header .container .arrows svg {
         margin-bottom: -6px; }
 
+@media (max-width: 1200px) {
+  .header {
+    background-size: cover; }
+    .header .container {
+      max-width: none;
+      margin: 10px 30px;
+      height: 450px; }
+      .header .container .nav-top {
+        height: auto; }
+        .header .container .nav-top .logo {
+          font-size: 25px; }
+      .header .container .slogan {
+        margin-top: 50px;
+        font-size: 60px; }
+      .header .container .arrows {
+        height: auto;
+        margin-bottom: 50px; } }
+
+@media (max-width: 480px) {
+  .header {
+    background-size: cover; }
+    .header .container {
+      justify-content: space-between;
+      margin: 10px 20px;
+      height: 250px;
+      max-width: none; }
+      .header .container .nav-top {
+        height: 100px;
+        align-items: flex-start; }
+        .header .container .nav-top .logo {
+          font-size: 14px; }
+          .header .container .nav-top .logo svg {
+            width: 50px;
+            height: 50px; }
+        .header .container .nav-top .menu {
+          margin-top: 25px; }
+      .header .container .slogan {
+        font-size: 25px;
+        margin: 0 auto; }
+      .header .container .arrows {
+        height: auto;
+        margin-top: 30px; } }
+
 .about {
   display: flex;
   flex-direction: row;
-  height: 250px;
   background: #ffffff;
   flex-shrink: 0;
   margin: 100px auto;
@@ -94,13 +129,11 @@
       line-height: 1.5; }
 
 .photo-work {
-  height: 230px;
   flex-shrink: 0;
   display: flex;
   flex-direction: row; }
 
 .work {
-  height: 605px;
   color: #40485a;
   font-weight: 300;
   margin: 90px 0;
@@ -152,7 +185,6 @@
         font-weight: 400; }
 
 .app {
-  height: 700px;
   flex-shrink: 0;
   background: url("../images/paymebackground.png") no-repeat center; }
   .app .container-app {
@@ -236,10 +268,10 @@
       .app .container-app .sites .name-app {
         font-size: 24px;
         color: #ffffff;
-        font-weight: 400; }
+        font-weight: 400;
+        margin-bottom: 50px; }
 
 .twitter {
-  height: 560px;
   flex-shrink: 0;
   overflow: hidden; }
   .twitter .logo-twit {
@@ -251,7 +283,7 @@
     background: #ffffff;
     box-shadow: 0 15px 40px rgba(78, 78, 78, 0.21);
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 70px;
     text-align: center;
     padding: 50px; }
     .twitter .twits span {
@@ -295,8 +327,292 @@
         margin-left: 10px;
         margin-top: 5px; }
 
+@media (max-width: 1200px) {
+  .about {
+    margin: 50px auto; }
+    .about .container-about {
+      max-width: none;
+      margin: 0 30px; }
+      .about .container-about .name-about {
+        font-size: 30px; }
+        .about .container-about .name-about .line {
+          width: 50%;
+          margin-top: 10px; }
+  .work {
+    width: auto;
+    margin: 50px auto; }
+    .work .container-work {
+      margin: 0 30px;
+      max-width: none; }
+      .work .container-work .name-work {
+        height: auto;
+        font-size: 30px; }
+      .work .container-work .line {
+        width: 10%;
+        height: 3px;
+        background: #4a24a8;
+        margin-top: 10px; }
+      .work .container-work .we-can {
+        justify-content: space-between;
+        padding-top: 30px; }
+      .work .container-work .section {
+        width: auto;
+        text-align: center;
+        padding: 30px; }
+        .work .container-work .section h2 {
+          font-size: 18px;
+          text-transform: uppercase;
+          line-height: 1.5em; }
+        .work .container-work .section p {
+          font-size: 14px;
+          line-height: 1.5rem; }
+        .work .container-work .section .image {
+          margin: 0 auto;
+          height: 100px;
+          width: 100px; }
+        .work .container-work .section.-up {
+          margin-top: -15px;
+          box-shadow: 0 15px 30px rgba(137, 137, 137, 0.3); }
+      .work .container-work .more {
+        margin-top: 30px;
+        height: auto; }
+        .work .container-work .more a {
+          text-transform: uppercase;
+          font-size: 18px;
+          color: #4ca9ff;
+          font-weight: 400; }
+  .app .container-app {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    max-width: none; }
+    .app .container-app .mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+      width: auto;
+      padding-top: 85px; }
+      .app .container-app .mobile .payme {
+        width: 50%;
+        font-size: 14px;
+        padding-top: 30px; }
+        .app .container-app .mobile .payme .payme-mobile {
+          font-size: 30px; }
+        .app .container-app .mobile .payme .button {
+          margin-top: 30px;
+          border-radius: 23px;
+          text-align: center;
+          line-height: 45px;
+          box-shadow: 0 25px 30px rgba(76, 169, 255, 0.5); }
+          .app .container-app .mobile .payme .button a {
+            text-decoration: none;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 500; }
+      .app .container-app .mobile .mockups {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline; }
+        .app .container-app .mobile .mockups .pay-mockup img {
+          margin-right: 30px;
+          box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3); }
+        .app .container-app .mobile .mockups .login-mockup img {
+          margin-bottom: -20px;
+          box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3); }
+    .app .container-app .lines {
+      display: none; }
+    .app .container-app .sites {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: auto;
+      margin-top: 70px;
+      border-top: 1px solid #7e65bb; }
+      .app .container-app .sites > div {
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-right: 10px; }
+        .app .container-app .sites > div .ux {
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #cfd2ff; }
+        .app .container-app .sites > div .name-app {
+          font-size: 18px;
+          color: #ffffff;
+          font-weight: 400;
+          margin-bottom: 50px; }
+      .app .container-app .sites > div:first-child {
+        border-top: 3px solid #ffffff;
+        padding-top: 19px;
+        margin-top: -2px; }
+  .twitter .logo-twit {
+    margin: 30px 0; }
+  .twitter .twits {
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    margin: 0 auto 70px;
+    text-align: center;
+    padding: 0; }
+    .twitter .twits span {
+      color: #4ca9ff; }
+    .twitter .twits .twit-center {
+      position: relative;
+      width: 60%;
+      height: auto;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 15px 40px rgba(78, 78, 78, 0.21);
+      padding: 20px; }
+    .twitter .twits .twit-left {
+      display: none; }
+    .twitter .twits .twit-right {
+      display: none; }
+    .twitter .twits .text-twit {
+      font-size: 14px;
+      font-weight: 300;
+      padding-bottom: 20px; } }
+
+@media (max-width: 480px) {
+  .about {
+    margin: 0 auto; }
+    .about .container-about {
+      flex-direction: column;
+      margin: 20px 20px;
+      max-width: none; }
+      .about .container-about .name-about {
+        text-align: center;
+        width: auto;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 10px; }
+        .about .container-about .name-about .line {
+          margin: 5px auto;
+          width: 80px; }
+  .photo-work {
+    display: none; }
+  .work {
+    margin: 30px 0; }
+    .work .container-work {
+      margin: 0 auto; }
+      .work .container-work .name-work {
+        height: auto;
+        font-size: 20px; }
+      .work .container-work .line {
+        width: 80px;
+        height: 3px;
+        background: #4a24a8;
+        margin-top: 5px; }
+      .work .container-work .we-can {
+        flex-direction: column;
+        padding-top: 0;
+        margin: 10px; }
+      .work .container-work .section {
+        width: auto;
+        padding: 0;
+        margin: 20px auto; }
+        .work .container-work .section h2 {
+          font-size: 14px;
+          line-height: 1.5em; }
+        .work .container-work .section p {
+          font-size: 14px;
+          line-height: 1.5em; }
+        .work .container-work .section .image {
+          height: 70px;
+          width: 70px; }
+        .work .container-work .section.-up {
+          margin-top: 0;
+          box-shadow: none; }
+      .work .container-work .more {
+        height: auto;
+        margin-top: 0; }
+        .work .container-work .more a {
+          font-size: 14px; }
+  .app .container-app {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    max-width: none; }
+    .app .container-app .mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+      width: auto;
+      padding-top: 5px; }
+      .app .container-app .mobile .payme {
+        width: auto;
+        font-size: 14px;
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center; }
+        .app .container-app .mobile .payme .payme-mobile {
+          font-size: 20px;
+          text-align: center; }
+        .app .container-app .mobile .payme .button {
+          display: inline-block;
+          width: auto;
+          height: auto;
+          margin: 20px auto;
+          padding: 10px 20px;
+          line-height: normal; }
+          .app .container-app .mobile .payme .button a {
+            font-size: 14px; }
+      .app .container-app .mobile .mockups {
+        display: none; }
+    .app .container-app .lines {
+      display: none; }
+    .app .container-app .sites {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: auto;
+      margin-top: 20px;
+      border-top: 1px solid #7e65bb; }
+      .app .container-app .sites > div .ux {
+        display: none; }
+      .app .container-app .sites > div .name-app {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 30px; }
+  .twitter .logo-twit {
+    margin: 20px 0; }
+    .twitter .logo-twit img {
+      width: 38px;
+      height: 27px; }
+  .twitter .twits {
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding: 0; }
+    .twitter .twits span {
+      color: #4ca9ff; }
+    .twitter .twits .twit-center {
+      position: relative;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 15px 40px rgba(78, 78, 78, 0.21);
+      padding: 20px; }
+    .twitter .twits .twit-left {
+      display: none; }
+    .twitter .twits .twit-right {
+      display: none; }
+    .twitter .twits .text-twit {
+      font-size: 14px;
+      font-weight: 300;
+      padding-bottom: 20px; } }
+
 .footer {
-  height: 350px;
   background: url("../images/paymebackground.png") no-repeat center;
   flex-shrink: 0;
   padding-top: 60px; }
@@ -365,4 +681,56 @@
       .footer .container-footer .copyring span {
         color: #4890e8; }
 
-/*# sourceMappingURL=main.css.map */
+@media (max-width: 1200px) {
+  .footer {
+    background: url("../images/paymebackground.png") no-repeat center;
+    flex-shrink: 0;
+    padding-top: 0; }
+    .footer .container-footer {
+      max-width: none;
+      margin: 0 30px; }
+      .footer .container-footer .logo {
+        display: flex;
+        flex-shrink: 0;
+        align-items: flex-end;
+        font-size: 25px;
+        color: #ffffff; }
+        .footer .container-footer .logo svg {
+          margin-right: 15px; }
+        .footer .container-footer .logo .name-logo {
+          margin-bottom: 10px;
+          font-weight: 600; }
+      .footer .container-footer .contact {
+        margin-bottom: 30px; } }
+
+@media (max-width: 480px) {
+  .footer .container-footer {
+    flex-shrink: 0;
+    margin: 10px 20px; }
+    .footer .container-footer .logo {
+      display: none; }
+    .footer .container-footer .contact {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      align-items: center; }
+      .footer .container-footer .contact .contact-info {
+        width: auto;
+        color: #cfd2ff;
+        line-height: 1.5; }
+      .footer .container-footer .contact .button {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: 20px auto;
+        padding: 10px 20px;
+        line-height: normal; }
+        .footer .container-footer .contact .button a {
+          font-size: 14px; }
+    .footer .container-footer .thin-line {
+      display: none; }
+    .footer .container-footer .copyring {
+      display: none; } }
