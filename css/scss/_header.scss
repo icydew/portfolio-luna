@@ -16,7 +16,6 @@
       height: 100px;
       align-items: flex-end;
       justify-content: space-between;
-
       .logo {
         display: flex;
         flex-shrink: 0;
@@ -24,14 +23,14 @@
         font-size: 30px;
         color: #ffffff;
         svg {
-          margin-right: 15px;
+          width: 80px;
+          height: 80px;
         }
         .name-logo {
           margin-bottom: 10px;
           font-weight: 600;
         }
       }
-
       .menu {
         display: flex;
         flex-shrink: 0;
@@ -40,6 +39,11 @@
         margin-bottom: 10px;
         .logo-menu {
           margin-left: 15px;
+          svg {
+            width: 25px;
+            height: 25px;
+            fill: #4890e8;
+          }
         }
       }
     }
@@ -60,8 +64,19 @@
       flex-shrink: 0;
       align-items: center;
       height: 120px;
-      svg {
+      .arrow {
         margin-bottom: -6px;
+        width: 25px;
+        height: 25px;
+        &.-bright {
+          fill: rgb(118, 92, 183);
+        }
+        &.-light {
+          fill: rgb(170, 156, 210);
+        }
+        &.-blue {
+          fill: rgb(75, 169, 255);
+        }
       }
     }
   }
@@ -70,6 +85,7 @@
 @media (max-width: 1200px) {
   .header {
     background-size: cover;
+
     .container {
       max-width: none;
       margin: 10px 30px;
@@ -77,15 +93,16 @@
 
       .nav-top {
         height: auto;
-
         .logo {
           font-size: 25px;
         }
       }
+
       .slogan {
         margin-top: 50px;
         font-size: 60px;
       }
+
       .arrows {
         height: auto;
         margin-bottom: 50px;
@@ -97,11 +114,13 @@
 @media (max-width: 480px) {
   .header {
     background-size: cover;
+
     .container {
       justify-content: space-between;
       margin: 10px 20px;
       height: 250px;
       max-width: none;
+
       .nav-top {
         height: 100px;
         align-items: flex-start;
@@ -118,10 +137,12 @@
           }
         }
       }
+
       .slogan {
         font-size: 25px;
         margin: 0 auto;
       }
+
       .arrows {
         height: auto;
         margin-top: 30px;

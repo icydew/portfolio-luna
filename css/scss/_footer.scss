@@ -18,7 +18,8 @@
       font-size: 30px;
       color: #ffffff;
       svg {
-        margin-right: 15px;
+        width: 80px;
+        height: 80px;
       }
       .name-logo {
         margin-bottom: 10px;
@@ -36,21 +37,18 @@
       margin-top: 10px;
       margin-bottom: 100px;
       align-items: center;
-
       .contact-info {
         width: 50%;
         color: #cfd2ff;
         line-height: 1.5;
       }
-
       .button {
         margin-top: 0;
         background: #4ca9ff;
         border-radius: 23px;
-        width: 200px;
-        height: 45px;
+        padding: 10px 30px;
+        width: 230px;
         text-align: center;
-        line-height: 45px;
         box-shadow: 0 25px 30px rgba(76, 169, 255, 0.5);
         a {
           text-decoration: none;
@@ -138,13 +136,11 @@
         margin-top: 10px;
         margin-bottom: 15px;
         align-items: center;
-
         .contact-info {
           width: auto;
           color: #cfd2ff;
           line-height: 1.5;
         }
-
         .button {
           display: inline-block;
           width: auto;
@@ -157,9 +153,11 @@
           }
         }
       }
+
       .thin-line {
         display: none;
       }
+
       .copyring {
         display: none;
       }
